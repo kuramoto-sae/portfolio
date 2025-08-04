@@ -23,7 +23,9 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 - Eclipse（開発環境）
 
 ▶️ **スクリーンショット**（画像があればここに貼る）
-
+おみくじ画面：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji.png<br>
+おみくじ結果(大吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Daikichi.png<br>
+おみくじ結果(小吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Result.png
 
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=drive_link
@@ -45,7 +47,11 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=drive
 
 
 ▶️ **スクリーンショット**（画像があればここに貼る）
-
+ホーム画面：https://github.com/kuramoto-sae/portfolio/blob/main/TodoHome.png<br>
+タスク入力：https://github.com/kuramoto-sae/portfolio/blob/main/TodoTask.png<br>
+タスク追加済み：https://github.com/kuramoto-sae/portfolio/blob/main/TodoTask2.png<br>
+チェック済み：https://github.com/kuramoto-sae/portfolio/blob/main/TodoChecked.png<br>
+タスクの削除：https://github.com/kuramoto-sae/portfolio/blob/main/TodoDeleted.png
 
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=sharing
