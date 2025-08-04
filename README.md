@@ -48,7 +48,7 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=drive
 
 
 ▶️ **動画リンク**
-
+https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=sharing
 
 
 
