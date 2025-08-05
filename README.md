@@ -23,7 +23,7 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 - Tomcat 9（ローカル実行）
 - Eclipse（開発環境）
 
-🖼️ **スクリーンショット**（画像があればここに貼る）
+🖼️ **スクリーンショット**<br>
 おみくじ画面：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji.png<br>
 おみくじ結果(大吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Daikichi.png<br>
 おみくじ結果(小吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Result.png
@@ -58,7 +58,7 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=shari
 - Eclipse（開発環境）
 
 
-🖼️ **スクリーンショット**（画像があればここに貼る）
+🖼️ **スクリーンショット**<br>
 ホーム画面：https://github.com/kuramoto-sae/portfolio/blob/main/TodoHome.png<br>
 タスク入力：https://github.com/kuramoto-sae/portfolio/blob/main/TodoTask.png<br>
 タスク追加済み：https://github.com/kuramoto-sae/portfolio/blob/main/TodoTask2.png<br>
@@ -116,14 +116,14 @@ cssやJavaScript、kintoneのapiなどを使用し、色を統一し、見やす
 ※コードや詳細な内容が残っていませんが、資料や設計書あり<br>
 ※一部資料の個人の特定を避けるため編集を施していますが、内容に影響はありません。
 
-▶️ **動画リンク(ゼミ用に作成したものです)**
-https://drive.google.com/file/d/1WJGoxuqSSdPqeb1INWCeLQsNaU9lMKXo/view?usp=sharing
-※音声がありますので音量にご注意ください。
-・動画編集を主に担当しました
+▶️ **動画リンク(ゼミ用に作成したものです)**<br>
+https://drive.google.com/file/d/1WJGoxuqSSdPqeb1INWCeLQsNaU9lMKXo/view?usp=sharing<br>
+※音声がありますので音量にご注意ください。<br>
+・動画編集を主に担当しました<br>
 ・音楽選びや各動画撮影を素敵なチームメンバーに協力していただきました
 
-📑 **資料諸々**
-https://drive.google.com/file/d/1k70q0IX4sbLQpst1U-zeVDC_hDFeyLbj/view?usp=sharing
+📑 **資料諸々**<br>
+https://drive.google.com/file/d/1k70q0IX4sbLQpst1U-zeVDC_hDFeyLbj/view?usp=sharing<br>
 サンプルプリント、ポスター、卒業研究概要説明書2、発表資料を作成させていただきましたのでぜひご覧ください。<br>
 その他の資料は素敵なチームメンバーに作成していただきました。
 
