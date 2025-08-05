@@ -11,7 +11,8 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 --------ここから下は学生時代の成果物です--------
 ・教育支援アプリ(先生・生徒・保護者の方々が利用することを想定)
 
-### 🍳 おみくじアプリ（Java + JSP）
+
+### 🍀 おみくじアプリ（Java + JSP）
 - おみくじを引ける
 - 大吉の時のみエフェクト実装
 
@@ -28,12 +29,20 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 おみくじ結果(小吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Result.png
 
 ▶️ **動画リンク**
-https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=drive_link
+https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=sharing
 
+**💻 コード（.zip）ダウンロード：**
+おみくじアプリコード：https://drive.google.com/file/d/1HN3qX4AjFjhW2NTvb-85z3oi8UnGUJu3/view?usp=sharing
 
+📦OmikujiApp
+ ┣ 📂src/main/java/Servlet/
+ ┃ ┗ 📄OmikujiServlet.java
+ ┣ 📂webapp/
+ ┃ ┣ 📄index.jsp
+ ┃ ┗ 📄result.jsp
+---
 
-
-### 📝 ToDo管理アプリ（Java + JSP）
+### 📋 ToDo管理アプリ（Java + JSP）
 - チェックボックス付きToDoリスト
 - 追加・削除・完了の管理可能
 - 完了時取り消し線が引かれる
@@ -56,9 +65,19 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=drive
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=sharing
 
+**💻 コード（.zip）ダウンロード：**
+Todo管理アプリコード：https://drive.google.com/file/d/1lSUBJEewkczoSwRXEAcgiM3N78c8lNGz/view?usp=sharing
 
-
+📦TodoCheckApp 
+ ┣ 📂src/main/java/servlet/ 
+ ┃ ┗ 📄TodoItem.java
+ ┃ ┗ 📄TodoServlet.java 
+ ┣ 📂webapp/
+ ┃ ┗ 📄todo.jsp
 ---
+
+
+
 
 ## 📁 チーム開発の経験（学校課題）
 ### 「教育支援アプリ（ローコード）」
