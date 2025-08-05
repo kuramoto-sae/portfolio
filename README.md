@@ -11,10 +11,13 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 --------ここから下は学生時代の成果物です--------<br>
 ・教育支援アプリ(先生・生徒・保護者の方々が利用することを想定)
 
+---
+
 
 ### 🍀 おみくじアプリ（Java + JSP）
 - おみくじを引ける
 - 大吉の時のみエフェクト実装
+
 
 ## 🔧 使用技術
 - Java（Servlet）
@@ -31,7 +34,7 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=sharing
 
-**💻 コード（.zip）ダウンロード：**
+**💻 コード（.zip）ダウンロード**<br>
 おみくじアプリコード：https://drive.google.com/file/d/1HN3qX4AjFjhW2NTvb-85z3oi8UnGUJu3/view?usp=sharing
 
 ```plaintext
@@ -68,7 +71,7 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=shari
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=sharing
 
-**💻 コード（.zip）ダウンロード：**
+**💻 コード（.zip）ダウンロード**<br>
 Todo管理アプリコード：https://drive.google.com/file/d/1lSUBJEewkczoSwRXEAcgiM3N78c8lNGz/view?usp=sharing
 
 ```plaintext
@@ -108,7 +111,7 @@ Todo管理アプリコード：https://drive.google.com/file/d/1lSUBJEewkczoSwRX
 
 ## ✨ 頑張ったこと
 ローコードなこともあり、アプリ自体の基盤を作るのは、かなり早く順調に作ることができました。<br>
-cssやJavaScript、kintoneのapiなどを使用し、色を統一し、見やすさなどにこだわりました。<br>
+cssやJavaScript、pluginなどを使用し、色の統一や見やすさにこだわりました。<br>
 先生・保護者・生徒という三種で分け、通知設定や画面表示設定を行いました。<br>
 (例：欠席連絡が先生だけに届く、学校で配布されるプリントを保護者・生とともに通知される等)
 
