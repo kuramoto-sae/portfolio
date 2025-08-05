@@ -34,13 +34,14 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=shari
 **💻 コード（.zip）ダウンロード：**
 おみくじアプリコード：https://drive.google.com/file/d/1HN3qX4AjFjhW2NTvb-85z3oi8UnGUJu3/view?usp=sharing
 
+```plaintext
 📦OmikujiApp
  ┣ 📂src/main/java/Servlet/
  ┃ ┗ 📄OmikujiServlet.java
  ┣ 📂webapp/
  ┃ ┣ 📄index.jsp
  ┃ ┗ 📄result.jsp
----
+```
 
 ### 📋 ToDo管理アプリ（Java + JSP）
 - チェックボックス付きToDoリスト
@@ -68,13 +69,14 @@ https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=shari
 **💻 コード（.zip）ダウンロード：**
 Todo管理アプリコード：https://drive.google.com/file/d/1lSUBJEewkczoSwRXEAcgiM3N78c8lNGz/view?usp=sharing
 
+```plaintext
 📦TodoCheckApp 
  ┣ 📂src/main/java/servlet/ 
  ┃ ┗ 📄TodoItem.java
  ┃ ┗ 📄TodoServlet.java 
  ┣ 📂webapp/
  ┃ ┗ 📄todo.jsp
----
+```
 
 
 
