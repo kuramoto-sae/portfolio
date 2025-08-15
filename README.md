@@ -29,9 +29,20 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 - Eclipse（開発環境）
 
 🖼️ **スクリーンショット**<br>
-おみくじ画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji.png?raw=true<br>
-おみくじ結果(大吉)：https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Daikichi.png?raw=true<br>
-おみくじ結果(小吉)：https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Result.png?raw=true
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Daikichi.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Daikichi.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Result.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Result.png?raw=true" width="300"/>
+  </a>
+</p>
+
 
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=sharing
@@ -64,11 +75,28 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=shari
 
 
 🖼️ **スクリーンショット**<br>
-ホーム画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoHome.png?raw=true<br>
-タスク入力：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask.png?raw=true<br>
-タスク追加済み：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask2.png?raw=true<br>
-チェック済み：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoChecked.png?raw=true<br>
-タスクの削除：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoDeleted.png?raw=true
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoHome.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoHome.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask2.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask2.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoChecked.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoChecked.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoDeleted.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoDeleted.png?raw=true" width="300"/>
+  </a>
+</p>
+
 
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=sharing
@@ -170,13 +198,27 @@ Todoリスト機能や、チェックボックス、計算機能の搭載をし�
 
 🖼️ **スクリーンショット**<br>
 
-メイン画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-MainPage.png?raw=true<br>
-Todo画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Todo.png?raw=true<br>
-習慣画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Habit.png?raw=true<br>
-目標体重画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Goal.png?raw=true<br>
-体重管理画面https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Weight.png?raw=true
-
-
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-MainPage.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-MainPage.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Todo.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Todo.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Habit.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Habit.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Goal.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Goal.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Weight.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Weight.png?raw=true" width="300"/>
+  </a>
+</p>
 
 ▶️ **動画リンク**<br>
 
@@ -211,12 +253,27 @@ Todo画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-T
 
 動画には載せていなかった部分の画像です。<br>
 
-管理者画面１：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage.png?raw=true<br>
-管理者画面２：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage2.png?raw=true<br>
-リアクション画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Reaction.png?raw=true<br>
-新規登録画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-SignUp.png?raw=true<br>
-アイコン登録画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Upload.png?raw=true
-
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage2.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage2.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Reaction.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Reaction.png?raw=true" width="300"/>
+  </a>
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-SignUp.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-SignUp.png?raw=true" width="300"/>
+  </a>
+</p>
+<p float="left">
+  <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Upload.png?raw=true">
+    <img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Upload.png?raw=true" width="300"/>
+  </a>
+</p>
 
 ▶️ **動画リンク**<br>
 
