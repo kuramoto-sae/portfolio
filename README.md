@@ -9,12 +9,14 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 ・おみくじあぷり<br>
 ・Todo管理アプリ<br>
 --------ここから下は学生時代の成果物です--------<br>
-・教育支援アプリ(先生・生徒・保護者の方々が利用することを想定)
+・教育支援アプリ(先生・生徒・保護者の方々が利用することを想定)<br>
+・健康支援アプリ<br>
+・チャットアプリ
 
 ---
 
 
-### 🍀 おみくじアプリ（Java + JSP）
+## 🍀 おみくじアプリ（Java + JSP）
 - おみくじを引ける
 - 大吉の時のみエフェクト実装
 
@@ -27,9 +29,9 @@ Javaを中心に学習中の者です。Servlet/JSPを用いた簡単なWebア�
 - Eclipse（開発環境）
 
 🖼️ **スクリーンショット**<br>
-おみくじ画面：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji.png<br>
-おみくじ結果(大吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Daikichi.png<br>
-おみくじ結果(小吉)：https://github.com/kuramoto-sae/portfolio/blob/main/Omikuji-Result.png
+おみくじ画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji.png?raw=true<br>
+おみくじ結果(大吉)：https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Daikichi.png?raw=true<br>
+おみくじ結果(小吉)：https://github.com/kuramoto-sae/portfolio/blob/main/images/Omikuji-Result.png?raw=true
 
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=sharing
@@ -48,7 +50,7 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=shari
 
 ---
 
-### 📋 ToDo管理アプリ（Java + JSP）
+## 📋 ToDo管理アプリ（Java + JSP）
 - チェックボックス付きToDoリスト
 - 追加・削除・完了の管理可能
 - 完了時取り消し線が引かれる
@@ -62,11 +64,11 @@ https://drive.google.com/file/d/1D_razDd2ea7fCsKjuQEp5SYyHHCsPjb2/view?usp=shari
 
 
 🖼️ **スクリーンショット**<br>
-ホーム画面：https://github.com/kuramoto-sae/portfolio/blob/main/TodoHome.png<br>
-タスク入力：https://github.com/kuramoto-sae/portfolio/blob/main/TodoTask.png<br>
-タスク追加済み：https://github.com/kuramoto-sae/portfolio/blob/main/TodoTask2.png<br>
-チェック済み：https://github.com/kuramoto-sae/portfolio/blob/main/TodoChecked.png<br>
-タスクの削除：https://github.com/kuramoto-sae/portfolio/blob/main/TodoDeleted.png
+ホーム画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoHome.png?raw=true<br>
+タスク入力：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask.png?raw=true<br>
+タスク追加済み：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoTask2.png?raw=true<br>
+チェック済み：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoChecked.png?raw=true<br>
+タスクの削除：https://github.com/kuramoto-sae/portfolio/blob/main/images/TodoDeleted.png?raw=true
 
 ▶️ **動画リンク**
 https://drive.google.com/file/d/1buIK7Euh1x5fv8Ket99FSv8sRQifef8Y/view?usp=sharing
@@ -123,7 +125,7 @@ cssやJavaScript、pluginなどを使用し、色の統一や見やすさにこ�
 https://drive.google.com/file/d/1WJGoxuqSSdPqeb1INWCeLQsNaU9lMKXo/view?usp=sharing<br>
 ※音声がありますので音量にご注意ください。<br>
 ・動画編集を主に担当しました<br>
-・音楽選びや各動画撮影を素敵なチームメンバーに協力していただきました
+・音楽選びや各動画撮影を素敵なチームメンバーに協力していただきました。
 
 📑 **資料諸々**<br>
 https://drive.google.com/file/d/1k70q0IX4sbLQpst1U-zeVDC_hDFeyLbj/view?usp=sharing<br>
@@ -133,15 +135,93 @@ https://drive.google.com/file/d/1k70q0IX4sbLQpst1U-zeVDC_hDFeyLbj/view?usp=shari
 ---
 
 ## 📁 チーム開発の経験（学校課題）
-### 「健康支援アプリ」
+## 「健康支援アプリ」
+※本アプリのコード、資料は一切ありません。
+※画像と動画及び説明のみになりますので、学校での記録と思っていただけたらと思います。
+
+## 🔧 使用技術
+- Java（Servlet）
+- JSP
+- HTML / CSS（画面構成）
+- Tomcat 9（ローカル実行）
+- Eclipse（開発環境）
+
+## 📃 アプリ説明
+本アプリは、利用者の健康を支援する目的で作成しました。ターゲットユーザーとしては若い女性にしました。<br>
+<本アプリ制作目的><br>
+・ダイエット記録の管理（目標体重と現在体重の入力）
+・日々のTodo管理(当日にこなすタスクを入力)
+・習慣付けを目的としたチェックリスト作成
+
+- 2人で開発しました。
+- 自分は主にバックエンドを担当しました。ロゴの作成や使用する画像・デザインの決定をフロントエンドの方と相談し決定しました。
+- エラー入力、空白入力のエラーの表示もしました。
+- 健康目的のダイエットや習慣作りを想定して作成しています。
+- 現在体重と目標体重の差を計算する機能を作りました。
+
+
+## ✨ 頑張ったこと
+
+初の二人での協力作業だったので、バックエンド、フロントエンドの情報、作業進捗度の共有の難しさを体験できました。<br>
+習慣の英語habitを取り、女性向けなアプリなこともあり、habiton(はびっとん)というかわいらしい雰囲気のアプリ名を付けました。<br>
+ロゴやデザインを含め、大人の女性向けの落ち着きつつも、柔らかい雰囲気の配色を選びました。文字色も黒ではなく茶色にすることで背景色との統一感を出しました。<br>
+Servletが機能しているかどうかを何度も確かめながら頑張りました。<br>
+Todoリスト機能や、チェックボックス、計算機能の搭載をし、本格的に使用できるアプリらしく作成することを頑張りました。<br>
+
+🖼️ **スクリーンショット**<br>
+
+メイン画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-MainPage.png?raw=true<br>
+Todo画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Todo.png?raw=true<br>
+習慣画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Habit.png?raw=true<br>
+目標体重画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Goal.png?raw=true<br>
+体重管理画面https://github.com/kuramoto-sae/portfolio/blob/main/images/Health-Weight.png?raw=true
 
 
 
+▶️ **動画リンク**<br>
+
+※本動画には細かな操作が含まれます。必要に応じて一時停止をしてご視聴ください。
+
+## 📝 画面解説
 
 
+---
 
 ## 📁 チーム開発の経験（学校課題）
-### 「チャットアプリ」
+## 「チャットアプリ」
+※本アプリの資料はありません。(一部コードのみ)
+※画像と動画及び説明のみになりますので、学校での記録と思っていただけたらと思います
 
+## 🔧 使用技術
+- Java（Servlet, bean, DAO, model）
+- JSP
+- HTML / CSS（画面構成）
+- Tomcat 9（ローカル実行）
+- Eclipse（開発環境）
+
+## 📃 アプリ説明
+
+
+
+## ✨ 頑張ったこと
+
+
+
+🖼️ **スクリーンショット**<br>
+
+動画には載せていなかった部分の画像です。<br>
+
+管理者画面１：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage.png?raw=true<br>
+管理者画面２：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-AdminPage2.png?raw=true<br>
+リアクション画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Reaction.png?raw=true<br>
+新規登録画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-SignUp.png?raw=true<br>
+アイコン登録画面：https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Upload.png?raw=true
+
+
+▶️ **動画リンク**<br>
+
+※本動画には細かな操作が含まれます。必要に応じて一時停止をしてご視聴ください。
+
+## 📝 画面解説
 
 
