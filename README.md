@@ -198,7 +198,7 @@ Todoリスト機能や、チェックボックス、計算機能の搭載をし�
 
 
 ▶️ **動画リンク**<br>
-https://drive.google.com/file/d/1WJGoxuqSSdPqeb1INWCeLQsNaU9lMKXo/view?usp=sharing<br>
+https://drive.google.com/file/d/1eS-lsGR3UFnaWw2T1q3JS_mXuf7-1PZF/view?usp=sharing<br>
 ※本動画には細かな操作が含まれます。必要に応じて一時停止をしてご視聴ください。
 
 ## 📝 画面解説
@@ -252,7 +252,7 @@ slackを参考にしていること、学校からの提示された課題があ
 | <a href="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Upload.png?raw=true"><img src="https://github.com/kuramoto-sae/portfolio/blob/main/images/Chat-Upload.png?raw=true" width="250"/></a> |
 
 ▶️ **動画リンク**<br>
-https://drive.google.com/file/d/1WJGoxuqSSdPqeb1INWCeLQsNaU9lMKXo/view?usp=sharing<br>
+https://drive.google.com/file/d/1kOmKVCzeXGl8jAaDrlp-kRiqgI2mQmX7/view?usp=sharing<br>
 ※本動画には細かな操作が含まれます。必要に応じて一時停止をしてご視聴ください。
 
 ## 📝 画面解説
