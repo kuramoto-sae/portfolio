@@ -266,3 +266,327 @@ https://drive.google.com/file/d/1kOmKVCzeXGl8jAaDrlp-kRiqgI2mQmX7/view?usp=shari
 新規登録画面：ユーザー名、メールアドレス、パスワードを設定することでアカウントが登録できる。(DBに登録)<br>
 アイコン登録画面：画像のファイルを選択し、送信ボタンを押すことでプロフィールにアイコンを登録することができる。
 
+## 💻 コード(一部) 
+
+私は主にバックエンドを担当していました。<br>
+Servlet, bean, DAO, modelなどを書いていました。<br>
+下記にチャットを削除するときのServletを載せています。<br>
+それ以降、プルダウン式でチャット機能のコードを一部お見せしますので、興味がある方は見てみてください。
+
+````markdown
+```java
+@WebServlet("/DeleteChatServlet")
+public class DeleteChatServlet extends LoginCheckServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO 必要な処理
+		// 画面から取得
+		String roomId = request.getParameter("roomId");
+		String deleteChatLogId = request.getParameter("deleteChatLogId");
+		System.out.println("ルームID:" + roomId + ",削除するチャットID:" + deleteChatLogId);
+
+		// TODO DBからメッセージを削除する
+
+		// GET処理にリダイレクト
+		response.sendRedirect("MainServlet?roomId=" + roomId);
+	}
+}
+````
+
+<details>
+  <summary>チャット機能(model)</summary>
+
+```java
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import bean.ChatLog;
+import bean.Room;
+import dao.ChatDAO;
+import exception.SwackException;
+
+/**
+ * チャット機能を実行するクラス
+ */
+public class ChatModel {
+
+	public Room getRoom(String roomId, String userId) throws SwackException {
+		return new ChatDAO().getRoom(roomId, userId);
+	}
+
+	public ArrayList<Room> getRoomList(String userId) throws SwackException {
+		return new ChatDAO().getRoomList(userId);
+	}
+
+	public ArrayList<Room> getDirectList(String userId) throws SwackException {
+		return new ChatDAO().getDirectList(userId);
+	}
+
+	public List<ChatLog> getChatlogList(String roomId) throws SwackException {
+		return new ChatDAO().getChatlogList(roomId);
+	}
+
+	public void saveChatLog(String roomId, String userId, String message) throws SwackException {
+		new ChatDAO().saveChatlog(roomId, userId, message);
+	}
+}
+```
+
+</details>
+
+<details>
+  <summary>チャット機能(bean)</summary>
+
+```java
+package bean;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+
+/**
+ * チャットログ情報を管理するBean
+ */
+public class ChatLog implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	/** チャットログID */
+	private int chatLogId;
+	/** ルームID */
+	private String roomId;
+	/** ユーザID */
+	private String userId;
+	/** ユーザ名 */
+	private String userName;
+	/** メッセージ */
+	private String message;
+	/** 投稿日時 */
+	private Timestamp createdAt;
+	
+
+	public ChatLog() {
+		// for JSP
+	}
+
+	public ChatLog(int chatLogId, String roomId, String userId, String userName, String message, Timestamp createdAt) {
+		this.chatLogId = chatLogId;
+		this.roomId = roomId;
+		this.userId = userId;
+		this.userName = userName;
+		this.message = message;
+		this.createdAt = createdAt;
+	}
+
+	public int getChatLogId() {
+		return chatLogId;
+	}
+
+	public String getRoomId() {
+		return roomId;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public Timestamp getCreatedAt() {
+		return createdAt;
+	}
+}
+```
+
+</details>
+
+
+
+
+<details>
+  <summary>チャット機能(DAO)</summary>
+
+```java
+package dao;
+
+import static parameter.Messages.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
+
+import bean.ChatLog;
+import bean.Room;
+import exception.SwackException;
+
+/**
+ * チャット機能に関するDBアクセスを行う.
+ */
+public class ChatDAO extends BaseDAO {
+	public ChatDAO() throws SwackException {
+		super();
+	}
+
+	public List<ChatLog> getChatlogList(String roomId) throws SwackException {
+		String sql = "SELECT CHATLOGID, U.USERID AS USERID, U.USERNAME AS USERNAME, MESSAGE, CREATED_AT "
+				+ "FROM CHATLOG C JOIN USERS U ON C.USERID = U.USERID WHERE ROOMID = ? " + "ORDER BY CREATED_AT ASC";
+
+		List<ChatLog> chatLogList = new ArrayList<ChatLog>();
+		try (Connection conn = dataSource.getConnection()) {
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			pStmt.setString(1, roomId);
+
+			ResultSet rs = pStmt.executeQuery();
+			while (rs.next()) {
+				int chatLogId = rs.getInt("CHATLOGID");
+				String userId = rs.getString("USERID");
+				String userName = rs.getString("USERNAME");
+				String message = rs.getString("MESSAGE");
+				Timestamp createdAt = rs.getTimestamp("CREATED_AT");
+
+				ChatLog chatLog = new ChatLog(chatLogId, roomId, userId, userName, message, createdAt);
+				chatLogList.add(chatLog);
+			}
+		} catch (SQLException e) {
+			throw new SwackException(ERR_DB_PROCESS, e);
+		}
+		return chatLogList;
+	}
+
+	public Room getRoom(String roomId, String userId) throws SwackException {
+		String sqlGetRoom = "SELECT R.ROOMID, R.ROOMNAME, COUNT(*) AS MEMBER_COUNT, R.DIRECTED"
+				+ " FROM ROOMS R JOIN JOINROOM J ON R.ROOMID = J.ROOMID" + " WHERE R.ROOMID = ?"
+				+ " GROUP BY R.ROOMID, R.ROOMNAME, R.DIRECTED";
+		String sqlGetDirectRoom = "SELECT U.USERNAME AS ROOMNAME FROM JOINROOM R"
+				+ " JOIN USERS U ON R.USERID = U.USERID" + " WHERE R.USERID <> ? AND ROOMID = ?";
+
+		boolean directed = false;
+		String roomName = "";
+		int memberCount = 0;
+
+		try (Connection conn = dataSource.getConnection()) {
+			PreparedStatement pStmt = conn.prepareStatement(sqlGetRoom);
+			pStmt.setString(1, roomId);
+			ResultSet rs = pStmt.executeQuery();
+			if (rs.next()) {
+				directed = rs.getBoolean("DIRECTED");
+				roomName = rs.getString("ROOMNAME");
+				memberCount = rs.getInt("MEMBER_COUNT");
+			}
+
+			// for Direct
+			if (directed) {
+				PreparedStatement pStmt2 = conn.prepareStatement(sqlGetDirectRoom);
+				pStmt2.setString(1, userId);
+				pStmt2.setString(2, roomId);
+
+				ResultSet rs2 = pStmt2.executeQuery();
+				if (rs2.next()) {
+					roomName = rs2.getString("ROOMNAME");
+					memberCount = 2;
+				}
+			}
+		} catch (SQLException e) {
+			throw new SwackException(ERR_DB_PROCESS, e);
+		}
+		Room room = new Room(roomId, roomName, memberCount, directed);
+		return room;
+	}
+
+	public ArrayList<Room> getRoomList(String userId) throws SwackException {
+		String sql = "SELECT R.ROOMID, R.ROOMNAME FROM JOINROOM J JOIN ROOMS R ON J.ROOMID = R.ROOMID "
+				+ "WHERE J.USERID = ? AND R.DIRECTED = FALSE ORDER BY R.ROOMNAME ASC";
+
+		ArrayList<Room> roomlist = new ArrayList<Room>();
+
+		try (Connection conn = dataSource.getConnection()) {
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setString(1, userId);
+
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
+				String roomId = rs.getString("ROOMID");
+				String roomName = rs.getString("ROOMNAME");
+				roomlist.add(new Room(roomId, roomName));
+			}
+
+		} catch (Exception e) {
+			throw new SwackException(ERR_DB_PROCESS, e);
+		}
+
+		return roomlist;
+
+	}
+
+	public ArrayList<Room> getDirectList(String userId) throws SwackException {
+		String sql = "SELECT R.ROOMID, U.USERNAME AS ROOMNAME FROM JOINROOM R " + "JOIN USERS U ON R.USERID = U.USERID "
+				+ "WHERE R.USERID <> ? AND ROOMID IN "
+				+ "(SELECT R.ROOMID FROM JOINROOM J JOIN ROOMS R ON J.ROOMID = R.ROOMID "
+				+ "WHERE J.USERID = ? AND R.DIRECTED = TRUE) " + "ORDER BY R.USERID";
+
+		ArrayList<Room> roomlist = new ArrayList<Room>();
+
+		try (Connection conn = dataSource.getConnection()) {
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setString(1, userId);
+			pst.setString(2, userId);
+
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
+				String roomId = rs.getString("ROOMID");
+				String roomName = rs.getString("ROOMNAME");
+				roomlist.add(new Room(roomId, roomName));
+			}
+
+		} catch (Exception e) {
+			throw new SwackException(ERR_DB_PROCESS, e);
+		}
+
+		return roomlist;
+
+	}
+
+	public void saveChatlog(String roomId, String userId, String message) throws SwackException {
+		String sql = "INSERT INTO CHATLOG (CHATLOGID, ROOMID, USERID, MESSAGE, CREATED_AT)"
+				+ " VALUES (nextval('CHATLOGID_SEQ'), ?, ?, ?, CURRENT_TIMESTAMP)";
+
+		try (Connection conn = dataSource.getConnection()) {
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			pStmt.setString(1, roomId);
+			pStmt.setString(2, userId);
+			pStmt.setString(3, message);
+
+			pStmt.executeUpdate();
+		} catch (SQLException e) {
+			throw new SwackException(ERR_DB_PROCESS, e);
+		}
+	}
+
+}
+```
+
+</details>
+
+
+## 📌 最後に
+ここまで見ていただきありがとうございます。<br>
+自作アプリから学生時代の成果物を載せました。<br>
+今回は完成版ではないコードもありますが、一部コードを掲載することで、設計や実装の理解度を見てもらえるようにしています。<br>
+今後もさらに改善・挑戦を続け、より良いアプリを作っていきたいと考えています。
+
+
+
+
+
