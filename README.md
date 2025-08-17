@@ -271,7 +271,7 @@ https://drive.google.com/file/d/1kOmKVCzeXGl8jAaDrlp-kRiqgI2mQmX7/view?usp=shari
 私は主にバックエンドを担当していました。<br>
 Servlet, bean, DAO, modelなどを書いていました。<br>
 下記にチャットを削除するときのServletを載せています。<br>
-それ以降、プルダウン式でチャット機能のコードを一部お見せしますので、興味がある方は見てみてください。
+それ以降、折りたたみ式でコードを一部お見せします。
 
 ````markdown
 ```java
